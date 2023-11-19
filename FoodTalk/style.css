@@ -1,0 +1,578 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #f5f5f5 !important;
+    margin: 0;
+}
+
+/* ######################   LOGO SECTION   ###################### */
+#logo{
+    display: flex;
+    justify-content: center;
+    margin-top: 130px;
+    margin-bottom: 30px;
+}
+#logoID{
+    font-family: 'Victor Mono', monospace;
+    font-weight: 700;
+    font-size: 48px;
+    padding-bottom: 25px;
+    font-size: 60px;
+}
+ 
+/* ######################   NAVIGATION  SECTION   ###################### */
+.nav1, .nav2{
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+.nav1 a, .nav2 a{
+    display: flex;
+    justify-content: center;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.img-with-text img{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0px;
+    transition: .2s ease;
+}
+.img-with-text p{
+    font-family: 'Victor Mono', monospace;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    padding-top: 3px;
+    transition: .2s ease;
+}
+.img-with-text img:hover{
+    transform: scale(1.3);
+    opacity: 0.8;
+}
+.img-with-text p:hover{
+    opacity: 0.3;
+}
+
+.searchContainer {
+    width: 450px;
+    display: flex;
+    background-color: #fff;
+    border: 3px solid transparent;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    justify-content: center;
+}
+
+.searchContainer input{
+    font-family: 'Victor Mono', monospace;
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+.searchContainer button{
+    font-family: 'Victor Mono', monospace;
+}
+
+
+#darkButton{
+    font-family: 'Victor Mono', monospace;
+    position: fixed !important;
+    bottom: 50px !important;
+    right: 25px !important;
+    color: rgb(72, 72, 72) !important;
+    z-index: 2 !important;
+}
+
+#darkButton:hover{
+    background-color: teal;
+    color: rgb(255, 255, 255) !important;
+    border: 2px solid #ffffff;
+    box-shadow: 0 0 10px rgba(30, 252, 237, 0.5);
+}
+
+.dark-mode {
+    background-color: rgb(84, 84, 84) !important;
+    color: rgb(228, 228, 228) !important;
+}
+
+button {
+    font-family: 'Victor Mono', monospace;
+    background-color: #8a8a8ab8;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    transition: border 0.3s ease, background-color 0.7s ease;
+}
+
+button:hover {
+    background-color: teal;
+    color: rgb(255, 255, 255);
+    border: 2px solid #ffffff;
+    box-shadow: 0 0 10px rgba(30, 252, 237, 0.5);
+}
+
+.eventButton{
+    font-family: 'Victor Mono', monospace;
+    margin-top: 35px !important;
+    padding: 20px 35px 20px 35px !important;
+    font-size: 15px !important;
+}
+
+
+.links{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    padding-top: 10px;
+}
+.links a {
+    font-size: 17px;
+    box-shadow: inset 0 0 0 0 #a936ad;
+    color: #54b3d6;
+    margin: 0 -.25rem;
+    padding: 0 .25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  }
+  .links #link1:hover {
+    box-shadow: inset 210px 0 0 0 #42e3e8;
+    color: rgb(110, 3, 92);
+    text-decoration: none;
+  }
+
+  .links #link2:hover {
+    box-shadow: inset 320px 0 0 0 #42e3e8;
+    color: rgb(110, 3, 92);
+    text-decoration: none;
+  }
+
+  .links #link3:hover {
+    box-shadow: inset 220px 0 0 0 #42e3e8;
+    color: rgb(110, 3, 92);
+    text-decoration: none;
+  }
+
+.donate{
+    width: 100%;
+    margin-top: 50px;
+    
+}
+
+.formCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formCenter form label{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.formCenter input{
+    display: block;
+    margin: 10px 0;
+    border-radius: 15px;
+    width: 300px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.formCenter form button{
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px 0 0 105px;
+}
+
+.name {
+    color: #1bdea0; /* Change the color to your preference */
+}
+
+.hometown {
+    color: #1bdea0; /* Change the color to your preference */
+}
+
+.custom-input.error {
+    background-color: rgb(255, 106, 89);
+}
+
+/* Add styles for input fields */
+.custom-input {
+    width: 300px; /* Adjust the width to your liking */
+    padding: 10px;
+    border: 1px solid #ccc;
+    transition: background-color 0.7s; /* Add smooth transition for color change */
+}
+
+/* Change background color when the input is focused (clicked) */
+.custom-input:focus {
+    background-color: #86e8c9; /* Change the color to your preference */
+}
+
+#displayText{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+}
+
+
+
+.donate h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    margin: 0 100px 0 100px;
+    padding-bottom: 35px;
+    text-align: center;
+}
+
+.donate p{
+    font-style: italic;
+    margin: 0 100px 0 100px;
+    padding-bottom: 25px;
+}
+
+
+/* ######################   ABOUT SECTION   ###################### */
+.about{
+    overflow: hidden;
+    width: 100%; display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+.aboutAnimContent{
+    z-index: 1;
+    padding-top: 180px;
+    position: absolute;
+}
+.aboutHead{
+    font-family: 'Victor Mono', monospace;
+    font-weight: 600;
+    font-size: 42px;
+    margin: 0 300px 0 300px;
+    text-align: center;
+    padding-top: 80px;
+}
+.aboutBlob{
+    position: absolute;
+    transform: translateY(-20%);
+    z-index: 0;
+    margin-top: 100px;
+}
+.aboutInfo{
+    padding-top: 170px;
+    width: 100%;
+}
+.aboutInfo p{
+    font-family: 'Victor Mono', monospace;
+    font-weight: 500;
+    font-size: 20px;
+    margin: 0 150px 0 150px;
+    padding-top: 400px;
+    padding-bottom: 25px;
+}
+
+/* ######################   WHY SECTION   ###################### */
+.why{
+    overflow: hidden;
+    width: 100%; display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.whyAnimContent{
+    z-index: 1;
+    padding-top: 180px;
+    position: absolute;
+}
+.whyHead{
+    font-family: 'Victor Mono', monospace;
+    font-weight: 600;
+    font-size: 38px;
+    margin: 0 300px 0 300px;
+    text-align: center;
+    padding-top: 80px;
+}
+.whyBlob{
+    position: absolute;
+    transform: translateY(-20%);
+    z-index: 0;
+    margin-top: 100px;
+}
+.whyInfo{
+    padding-top: 550px;
+    padding-bottom: 25px;
+    width: 100%;
+}
+.whyInfo p{
+    font-family: 'Victor Mono', monospace;
+    font-weight: 500;
+    font-size: 20px;
+    margin: 0 150px 0 150px;
+    padding-bottom: 25px;
+}
+
+/* ######################   EVENT SECTION   ###################### */
+.event{
+    overflow: hidden;
+    width: 100%; display: flex;
+    justify-content: center;
+}
+.eventAnimContent {
+    z-index: 1;
+    padding-top: 180px;
+    position: absolute;
+  }
+.eventHead{
+    font-family: 'Victor Mono', monospace;
+    font-weight: 600;
+    font-size: 38px;
+    margin: 0 300px 0 300px;
+    text-align: center;
+    padding-top: 70px;
+}
+.eventBlob{
+    position: absolute;
+    transform: translateY(-20%);
+    z-index: 0;
+    margin-top: 100px;
+}
+.eventInfo{
+    padding-top: 550px;
+    width: 100%;
+}
+.eventInfo p{
+    font-family: 'Victor Mono', monospace;
+    font-weight: 500;
+    font-size: 20px;
+    margin: 0 150px 0 150px;
+    padding-bottom: 25px;
+}
+.eventInfo2{
+    padding-top: 50px;
+    width: 100%;
+}
+.eventInfo2 p{
+    font-family: 'Victor Mono', monospace;
+    font-weight: 500;
+    font-size: 20px;
+    margin: 0 150px 0 150px;
+    padding-bottom: 25px;
+}
+
+/* ######################   FORM SECTION   ###################### */
+.form{
+    overflow: hidden;
+    width: 100%; display: flex;
+    justify-content: center;
+    margin-top: 0px;
+}
+.formAnimContent{
+    z-index: 1;
+    padding-top: 180px;
+    position: absolute;
+}
+.formHead{
+    font-family: 'Victor Mono', monospace;
+    font-weight: 600;
+    font-size: 42px;
+    margin: 0 250px 0 250px;
+    text-align: center;
+    padding-top: 60px;
+}
+.formBlob{
+    position: absolute;
+    transform: translateY(-20%);
+    z-index: 0;
+    margin-top: 100px;
+}
+.formInfo{
+    padding-top: 170px;
+    width: 100%;
+}
+.formInfo p{
+    font-family: 'Victor Mono', monospace;
+    font-weight: 500;
+    font-size: 20px;
+    margin: 0 150px 0 150px;
+    padding-top: 400px;
+    padding-bottom: 35px;
+}
+
+
+
+
+
+/* ######################   FOOTER SECTION   ###################### */
+footer{
+    width: 100%;
+    background-color: rgb(49, 57, 58);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.foot-main{ 
+    padding: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.footer1{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.footer2{
+    height: 50px;
+    color: white;
+    font-size: 15px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.footer3{
+padding-top: 0;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;   
+}
+.footer3 p{
+    white-space: nowrap;
+    font-size: 20px;
+    display: inline-flex;
+    color: white;
+}
+.footer3 .icons{
+    width: 100%;
+}
+
+
+
+/* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+    text-decoration: none;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+  
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+
+  .fa-1 {
+    background: #dd4b39;
+    color: white;
+  }
+  
+  .fa-2 {
+    background: #007bb5;
+    color: white;
+  }
+
+  .fa-3 {
+    background: #bb0000;
+    color: white;
+  }
+
+
+/* Set initial opacity to 0 to make content invisible */
+.fade-in {
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+/* Add this class to the element when it's in the viewport to trigger the fade-in effect */
+.fade-in-active {
+    opacity: 1;
+}
+
+
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+  }
+  
+
+
+  /* Add this style for the confetti image */
+.confetti {
+    width: 200px; /* Adjust the width as needed */
+    height: auto; /* Maintain the aspect ratio */
+    margin-top: 20px; /* Adjust the margin as needed */
+  }
+  
+
+#counterDisplay{
+    padding-top: 0px !important;
+    margin-top: 0px !important;
+}
